@@ -22,7 +22,7 @@ var Songs = Backbone.Collection.extend({
         // See: https://developer.mozilla.org/en-US/docs/Web/API/console.error
         console.error('Failed to send message', data);
       }
-    })
+    });
   }
   // url: 'http://parse.sfm8.hackreactor.com/mytunes/classes/songs'
 
