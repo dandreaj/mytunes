@@ -7,11 +7,13 @@ var SongQueueEntryView = Backbone.View.extend({
 
   events: {
     'click': function() {
-      this.model.play();
+      // this.model.play();
+      this.model.dequeue(this.model);
     }
   },
 
   render: function() {
+    // var removeOption = new removeEntryView(this.model);
     return this.$el.html(this.template(this.model.attributes));
   }
 
